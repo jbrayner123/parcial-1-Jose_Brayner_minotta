@@ -114,14 +114,16 @@ El archivo instalador APK se generará en:
 
 ---
 
-## Rama de Entrega en Git
+## Datos de la Entrega
 
-La entrega de este proyecto se encuentra consolidada en la rama:
-```text
-parcial-1-nombre-apellido
-```
-Para alternar a esta rama o verificar el historial:
+- **Estudiante**: José Brayner Minotta
+- **Repositorio Remoto**: [https://github.com/jbrayner123/parcial-1-Jose_Brayner_minotta](https://github.com/jbrayner123/parcial-1-Jose_Brayner_minotta)
+- **Ramas de Entrega**:
+  - `parcial-1-jose-minotta` (nombre personalizado)
+  - `parcial-1-nombre-apellido` (formato literal del enunciado)
+
+Para alternar entre ramas o verificar el estado:
 ```bash
-git checkout parcial-1-nombre-apellido
+git checkout parcial-1-jose-minotta
 git status
 ```
