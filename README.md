@@ -10,8 +10,9 @@ Este repositorio contiene la solución completa del primer examen parcial, compu
 Parcial1/
 ├── PWA React/          # Ejercicio 1: Aplicación Web Progresiva para Administración de Pacientes
 ├── Ionic App/          # Ejercicio 2: Aplicación Móvil en Ionic React para Consulta de Visitas Médicas
+├── screenshots/        # Evidencias visuales de la ejecución de ambos ejercicios
 ├── .gitignore          # Exclusión de node_modules, compilados y artefactos de Android
-└── README.md           # Documentación técnica y guía de ejecución
+└── README.md           # Documentación técnica, galería y guía de ejecución
 ```
 
 ---
@@ -42,12 +43,29 @@ Aplicación web progresiva desarrollada con React y Vite orientada a la gestión
   - Service Worker registrado (`sw.js`) para soporte y caché sin conexión.
   - Botón interactivo de instalación en el encabezado.
 
-### 2. Credenciales de Prueba (PWA React)
+### 2. Evidencias Visuales (PWA React)
+
+#### Inicio de Sesión y Manejo de Errores
+| Pantalla de Login | Error por Credenciales Inválidas |
+| :---: | :---: |
+| ![PWA Login](./screenshots/pwa-01-login.png) | ![PWA Error Login](./screenshots/pwa-02-login-error.png) |
+
+#### Panel de Control y Búsqueda en Tiempo Real
+| Dashboard con Listado de Pacientes | Búsqueda Filtrada (Padre a Hijo) |
+| :---: | :---: |
+| ![PWA Dashboard](./screenshots/pwa-03-dashboard.png) | ![PWA Búsqueda](./screenshots/pwa-05-busqueda.png) |
+
+#### Formulario y Validación de Pacientes
+| Validaciones de Campos Obligatorios y Cédula |
+| :---: |
+| ![PWA Validación Formulario](./screenshots/pwa-04-formulario-validacion.png) |
+
+### 3. Credenciales de Prueba (PWA React)
 - **Usuario**: `admin@hospital.local` | **Contraseña**: `admin123`
 - **Usuario**: `medico@hospital.local` | **Contraseña**: `medico2026`
 - **Usuario**: `recepcion@hospital.local` | **Contraseña**: `recepcion1`
 
-### 3. Instrucciones de Ejecución
+### 4. Instrucciones de Ejecución
 ```bash
 cd "PWA React"
 npm install
@@ -79,11 +97,33 @@ Aplicación móvil desarrollada con Ionic React (`@ionic/react` v8, React 18, `@
   - Proyecto Android configurado y sincronizado con `@capacitor/android`.
   - Generación de instalador compilado `app-debug.apk`.
 
-### 2. Credenciales de Prueba (Ionic App)
+### 2. Evidencias Visuales (Ionic App)
+
+#### Acceso Móvil y Alerta de Error
+| Pantalla de Login Móvil | Alerta IonToast (Credenciales Incorrectas) |
+| :---: | :---: |
+| ![Ionic Login](./screenshots/ionic-01-login.png) | ![Ionic Error Login](./screenshots/ionic-02-login-error.png) |
+
+#### Tab 1: Agenda de Visitas y Filtro por Estado
+| Agenda Completa de Visitas | Filtro por Estado (En camino) |
+| :---: | :---: |
+| ![Ionic Visitas](./screenshots/ionic-03-visitas-todas.png) | ![Ionic Filtro](./screenshots/ionic-04-visitas-filtro.png) |
+
+#### Ficha de Detalle y Actualización de Estado
+| Detalle de la Cita Médica | Actualización de Estado con IonToast |
+| :---: | :---: |
+| ![Ionic Detalle Visita](./screenshots/ionic-05-detalle-visita.png) | ![Ionic Estado Actualizado](./screenshots/ionic-06-actualizar-estado.png) |
+
+#### Tabs 2 y 3: Directorio de Pacientes y Perfil Médico
+| Directorio de Pacientes | Búsqueda en Directorio | Perfil del Médico y Logout |
+| :---: | :---: | :---: |
+| ![Ionic Pacientes](./screenshots/ionic-07-pacientes.png) | ![Ionic Búsqueda Pacientes](./screenshots/ionic-08-pacientes-busqueda.png) | ![Ionic Perfil](./screenshots/ionic-09-perfil.png) |
+
+### 3. Credenciales de Prueba (Ionic App)
 - **Usuario**: `medico@hospital.local`
 - **Contraseña**: `123456`
 
-### 3. Instrucciones de Ejecución
+### 4. Instrucciones de Ejecución
 #### Modo Web / Desarrollo
 ```bash
 cd "Ionic App"
