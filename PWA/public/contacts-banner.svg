@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Fondo con bordes redondeados -->
+  <rect width="600" height="200" rx="16" fill="url(#bgGradient)" />
+
+  <!-- Círculos decorativos de fondo -->
+  <circle cx="50" cy="180" r="100" fill="#ffffff" fill-opacity="0.08" />
+  <circle cx="560" cy="20" r="80" fill="#ffffff" fill-opacity="0.08" />
+  <circle cx="480" cy="170" r="50" fill="#ffffff" fill-opacity="0.05" />
+
+  <!-- Ilustración de tarjetas de contacto flotantes -->
+  <!-- Tarjeta central -->
+  <g filter="url(#shadow)">
+    <rect x="200" y="35" width="200" height="130" rx="12" fill="#ffffff" />
+    <circle cx="250" cy="75" r="22" fill="#dbeafe" />
+    <text x="250" y="81" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle">CM</text>
+    <rect x="285" y="65" width="95" height="9" rx="4.5" fill="#1e293b" />
+    <rect x="285" y="80" width="65" height="7" rx="3.5" fill="#94a3b8" />
+    <!-- Línea decorativa inferior -->
+    <line x1="220" y1="120" x2="380" y2="120" stroke="#f1f5f9" stroke-width="1.5" />
+    <circle cx="235" cy="135" r="6" fill="#3b82f6" />
+    <rect x="250" y="132" width="60" height="6" rx="3" fill="#cbd5e1" />
+  </g>
+
+  <!-- Tarjeta izquierda decorativa detrás -->
+  <g opacity="0.85" transform="rotate(-6 110 100)">
+    <rect x="50" y="55" width="150" height="100" rx="10" fill="#ffffff" fill-opacity="0.9" />
+    <circle cx="90" cy="90" r="16" fill="#fef3c7" />
+    <text x="90" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#d97706" text-anchor="middle">LG</text>
+    <rect x="115" y="82" width="65" height="7" rx="3.5" fill="#334155" />
+    <rect x="115" y="94" width="45" height="6" rx="3" fill="#94a3b8" />
+  </g>
+
+  <!-- Tarjeta derecha decorativa detrás -->
+  <g opacity="0.85" transform="rotate(6 490 100)">
+    <rect x="400" y="55" width="150" height="100" rx="10" fill="#ffffff" fill-opacity="0.9" />
+    <circle cx="440" cy="90" r="16" fill="#e0e7ff" />
+    <text x="440" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="bold" fill="#4f46e5" text-anchor="middle">AM</text>
+    <rect x="465" y="82" width="65" height="7" rx="3.5" fill="#334155" />
+    <rect x="465" y="94" width="45" height="6" rx="3" fill="#94a3b8" />
+  </g>
+</svg>

@@ -1,21 +1,87 @@
-# Parcial 1 - Desarrollo de Aplicaciones Web y Móviles
+# Parcial 1 y Retos Prácticos (Challengers) - Desarrollo Web y Móvil
 
-Este repositorio contiene la solución completa del primer examen parcial, compuesto por dos aplicaciones independientes construidas con React, cumpliendo con las especificaciones de persistencia local en `localStorage`, navegación y reglas de diseño solicitadas.
+Este repositorio contiene tanto la solución del **Primer Examen Parcial** (Gestión Hospitalaria con PWA React e Ionic App) como los **4 Retos Prácticos (Challengers)** desarrollados con **React**, **Vite** e **Ionic React**, cumpliendo con los estándares de diseño, persistencia en `localStorage` y arquitectura solicitados.
 
 ---
 
 ## Estructura del Repositorio
 
 ```text
-Parcial1/
-├── PWA React/          # Ejercicio 1: Aplicación Web Progresiva para Administración de Pacientes
-├── Ionic App/          # Ejercicio 2: Aplicación Móvil en Ionic React para Consulta de Visitas Médicas
-├── screenshots/        # Evidencias visuales de la ejecución de ambos ejercicios
-├── .gitignore          # Exclusión de node_modules, compilados y artefactos de Android
-└── README.md           # Documentación técnica, galería y guía de ejecución
+parcial-1-Jose_Brayner_minotta/
+│
+├── [PARCIAL 1]
+│   ├── PWA React/          # Ejercicio 1: PWA para Administración de Pacientes (Hospital)
+│   ├── Ionic App/          # Ejercicio 2: App Móvil en Ionic React para Visitas Médicas Domiciliarias
+│   └── screenshots/        # Galería de evidencias de los ejercicios del Parcial
+│
+├── [CHALLENGERS / RETOS PRÁCTICOS]
+│   ├── React-Repaso/       # Reto 1: Gestor de Contactos modular con React + Vite
+│   ├── PWA/                # Reto 2: Evolución PWA del Gestor de Contactos (Demo en Netlify)
+│   ├── taskIonic/          # Reto 3: Gestor de Tareas móvil con Ionic React y APK Capacitor
+│   └── Storage Ionic/      # Reto 4: Autenticación, LocalStorage y Rutas Protegidas en Ionic React
+│
+├── .gitignore              # Configuración unificada de exclusiones
+└── README.md               # Documentación integral del repositorio
 ```
 
 ---
+
+# Parte 1: Proyectos Challengers (Retos Prácticos)
+
+### 1. [React-Repaso](./React-Repaso)
+- Gestor de contactos personal desarrollado con **React + Vite**.
+- Componentes funcionales modulares (`Header`, `ContactForm`, `ContactList`, `ContactItem`, `Loader`).
+- Estado de carga simulado asíncrono con `useEffect` y `setTimeout`.
+- Manejo de estado CRUD (agregar y eliminar contactos) con `useState`.
+- Iconos vectoriales SVG ligeros y diseño limpio tipo tarjeta móvil.
+- **Ejecución:**
+  ```bash
+  cd "React-Repaso"
+  npm install
+  npm run dev
+  ```
+
+### 2. [PWA](./PWA)
+- Evolución del gestor de contactos como **Progressive Web App (PWA)** utilizando `vite-plugin-pwa`.
+- **Estrategia Híbrida de Caché:** Precaché para assets locales y Runtime Caching para fuentes de Google e imágenes.
+- Web App Manifest configurado con iconos adaptables (192px y 512px maskable).
+- **Demo en vivo desplegada en Netlify:** [https://nimble-gumdrop-2e0b83.netlify.app/](https://nimble-gumdrop-2e0b83.netlify.app/)
+- **Ejecución:**
+  ```bash
+  cd "PWA"
+  npm install
+  npm run dev
+  ```
+
+### 3. [taskIonic](./taskIonic)
+- Aplicación móvil de **Gestor de Tareas** desarrollada con **Ionic React (@ionic/react)**.
+- Construida con componentes nativos de Ionic (`IonPage`, `IonHeader`, `IonToolbar`, `IonContent`, `IonCard`, `IonList`, `IonItem`, `IonCheckbox`, `IonButton`).
+- Funcionalidades: agregar tareas, marcar como completadas (tachado dinámico) y eliminar tareas.
+- Configurada con **Capacitor** para Android.
+- **APK compilado disponible:** [TaskManager.apk](./taskIonic/TaskManager.apk)
+- **Ejecución:**
+  ```bash
+  cd "taskIonic"
+  npm install
+  npm run dev
+  ```
+
+### 4. [Storage Ionic](./Storage%20Ionic)
+- Demostración de **Autenticación, Storage y Protección de Rutas** en **Ionic React + TypeScript**.
+- Pantalla de Login con validación de credenciales (`user@mail.com` / `123`).
+- Almacenamiento de token de sesión en `localStorage` (`logged = true`).
+- Protección de ruta y persistencia con `useEffect` para mantener la sesión activa al recargar la app.
+- Pantalla protegida con listado de datos y botón de cierre de sesión (Logout).
+- **Ejecución:**
+  ```bash
+  cd "Storage Ionic"
+  npm install
+  npm run dev
+  ```
+
+---
+
+# Parte 2: Parcial 1 (Desarrollo Web y Móvil)
 
 ## Ejercicio 1 — PWA React (Administración de Pacientes)
 
@@ -159,11 +225,6 @@ El archivo instalador APK se generará en:
 - **Estudiante**: José Brayner Minotta
 - **Repositorio Remoto**: [https://github.com/jbrayner123/parcial-1-Jose_Brayner_minotta](https://github.com/jbrayner123/parcial-1-Jose_Brayner_minotta)
 - **Ramas de Entrega**:
+  - `main` (rama principal con Parcial 1 y Challengers)
   - `parcial-1-jose-minotta` (nombre personalizado)
   - `parcial-1-nombre-apellido` (formato literal del enunciado)
-
-Para alternar entre ramas o verificar el estado:
-```bash
-git checkout parcial-1-jose-minotta
-git status
-```
